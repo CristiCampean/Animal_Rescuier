@@ -2,12 +2,17 @@ package Controloer;
 
 public class Medic {
 
-    String specialization;
+
+     private String specialization;
     String tratament;
-    int dayfortratament;
+    int dayForTratament;
     String game;
 
-    public Medic(String specialization) {
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    public void setSpecialization(String specialization) {
         this.specialization = specialization;
     }
 }
