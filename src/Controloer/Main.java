@@ -7,11 +7,11 @@ public class Main {
         Game game = new Game();
         game.start();
 
-        Animal animal = new Animal("Tom", 4, "happy");
+        Animal animal = new Animal();
         Adoptator adoptator = new Adoptator("Cristi", 100);
         Medic medic = new Medic();
         Animal animal1 = new Animal();
-        animal.nume = "Ela";
+
         medic.setSpecialization("chirurg");
 
     }

@@ -8,6 +8,7 @@ public class Animal {
     int healthLevel;
     int hungryLeavel;
     String modeLevel;
+    String feed;
     boolean quiet;
 
 
@@ -19,8 +20,8 @@ public class Animal {
         this.culoare = culoare;
     }
 
-    public void setNume(String nume) {
-        this.name = nume;
+    public void setNume(String name) {
+        this.name = name;
     }
 
     public void setAge(int age) {
@@ -45,9 +46,11 @@ public class Animal {
 
 
 
-    public Animal(String nume, int health, String mode) {
+    public Animal(String name, int health, String mode,int hungryLeavel, String feed) {
         this.name = name;
         this.healthLevel = health;
         this.modeLevel = mode;
+        this.hungryLeavel = hungryLeavel;
+        this. feed = feed;
     }
 }

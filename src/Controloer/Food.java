@@ -1,5 +1,8 @@
 package Controloer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Food {
 
     String nume;
@@ -7,3 +10,4 @@ public class Food {
     double quantity;
     double expirationDate;
 }
+

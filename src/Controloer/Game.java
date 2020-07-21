@@ -3,6 +3,8 @@ package Controloer;
 import Controloer.Exception.InvalidException;
 import Controloer.utils.ScannerUtils;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Game {
@@ -62,6 +64,7 @@ public class Game {
       initAnimal();
       initRescuer();
       nameAnimal();
+      requireFeeding();
     }
     private void initRescuer() throws InvalidException {
         Rescuer rescuer = new Rescuer();
@@ -83,4 +86,18 @@ public class Game {
         animal.name= ScannerUtils.ReadScannerString();
         System.out.println( "Your Animal have the name " + animal.name);
     }
+    private void requireFeeding(){
+        System.out.println(" Please feed your animal. Choose something from the meniu");
+        List<String> foodList = new ArrayList<>();
+        foodList.add("vegetable");
+        foodList.add("meat");
+        foodList.add("vitamin");
+        for (String element: foodList){
+            System.out.println(element);
+        }
+        this.animal = ScannerUtils.ReadScannerString();
+
+
+    }
 }
+
