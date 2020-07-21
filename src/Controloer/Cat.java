@@ -1,7 +1,7 @@
 package Controloer;
 
-public class Cat {
-    String name;
+public class Cat  extends Animal{
+
     int age;
     int hungryLeavel;
 

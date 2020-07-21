@@ -39,11 +39,11 @@ public class Game {
 
     public void initAnimal(){
         Dog dog = new Dog();
-        dog.name = "Tom";
+
         dog.age = 4;
         dog.hungryLeavel = 1;
         Cat cat = new Cat();
-        cat.name = "Betty";
+
         cat.age = 2;
         cat.hungryLeavel = 2;
 
@@ -61,13 +61,14 @@ public class Game {
     public void start() throws InvalidException {
       initAnimal();
       initRescuer();
+      nameAnimal();
     }
     private void initRescuer() throws InvalidException {
         Rescuer rescuer = new Rescuer();
         System.out.println(" Write your name");
         Scanner s = new Scanner(System.in);
         try {
-            rescuer.name = s.next();
+            rescuer.name = ScannerUtils.ReadScannerString();
              if(rescuer.name!=String);
             
         } catch (Exception e) {
@@ -75,4 +76,11 @@ public class Game {
             throw new InvalidException();
         }
         }
+
+         private void nameAnimal() {
+        System.out.println(" Give the animal a name");
+        Animal animal = new Animal();
+        animal.name= ScannerUtils.ReadScannerString();
+        System.out.println( "Your Animal have the name " + animal.name);
     }
+}

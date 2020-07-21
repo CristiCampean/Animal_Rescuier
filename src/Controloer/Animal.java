@@ -3,7 +3,7 @@ package Controloer;
 public class Animal {
 
     String culoare;
-    String nume;
+    String name;
     int age;
     int healthLevel;
     int hungryLeavel;
@@ -20,7 +20,7 @@ public class Animal {
     }
 
     public void setNume(String nume) {
-        this.nume = nume;
+        this.name = nume;
     }
 
     public void setAge(int age) {
@@ -46,7 +46,7 @@ public class Animal {
 
 
     public Animal(String nume, int health, String mode) {
-        this.nume = nume;
+        this.name = name;
         this.healthLevel = health;
         this.modeLevel = mode;
     }
