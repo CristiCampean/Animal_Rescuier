@@ -42,7 +42,12 @@ public class Game {
         dog.name = "Tom";
         dog.age = 4;
         dog.hungryLeavel = 1;
-        System.out.println( " For a dog enter 1 and for a cat enter2");
+        Cat cat = new Cat();
+        cat.name = "Betty";
+        cat.age = 2;
+        cat.hungryLeavel = 2;
+
+        System.out.println( " For a dog enter 1 or for a cat enter 2");
         ScannerUtils.ReadScannerInt();
         choose = ScannerUtils.ReadScannerInt();
         if( choose ==1){
